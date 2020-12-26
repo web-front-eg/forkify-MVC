@@ -1,0 +1,39 @@
+// ** User Stories **
+//
+//    Description of the applicatiopn's functionality from the user's perspective.
+//
+// 1. As a user, I want to search for recipes, so that I can find new ideas for meals.
+// 2. As a user, I want to be able to update the number of servings, so that I can cook a meal for different number of people.
+// 3. As a user, I want to bookmark recipes, so that I can leave a review for them later.
+// 4. As a user, I want to be albe to create my own recipes, so that I have them all organized in the same app.
+// 5. As a user, I want to be able to see my bookmarks and my recipes when I leave the application and come back later, so I can close it safely after cooking.
+
+// 1. Comme un utilisateur, je veux rechercher des recettes, donc je peux trouver des idées nouveaux pour le repas.
+// 2. Comme un utilisateur, je veux téléverser le chiffre du service, donc je peux faire la cuisine pour des nombres des gens différents.
+// 3. Comme un utilisateur, je veux faire un marque-page les recettes, alors que je puisse laisser les revues à eux plus tard.
+// 4. Comme un utilisateur, je veux créer mes propres recettes, alors que je les aie tous organisés dans la même application.
+// 5. Comme un utilisateur, Je peux regarder mes bookmarks et mes recettes où je sors de l'appli et je reviens plus tard,
+//                          donc je peux la fermer sûrement après cuisiner.
+
+// ** Features **
+// 1. Search recipes                -> Search functionality: input field to send requests to API with searched keywords.
+//                                  -> Display results with pagination.
+//                                  -> Display recipe with cooking time, servings and ingredients.
+// 2. Update the number of servings -> Change servings functionality: update all ingredients accoding to current number of servings.
+// 3. Bookmark recipes              -> Bookmarking functionality: display list of all bookmarked recipes.
+// 4. Create my own recipes         -> User can upload own recipes.
+//                                  -> User recipes will automatically be bookmarked.
+//                                  -> User can only see their own recipes, not recipes from other users.
+// 5. See my bookmarks and own recipes         -> Store bookmark data in the browser using local storage.
+//    when I leave the app and come back later -> On page load, read saved bookmarks from local storage and display.
+
+// 1. Cherche des recettes                -> Cherche la fonction: input field à envoyer une requête à l'API des mots clés trouvés.
+//                                        -> Affiche le résultat en pagination.
+//                                        -> Affiche le recette avec le temps du cuisson, du service et des ingrédients
+// 2. Mettre à jour le chiffre du service -> Change la fonction du service: màj toutes les ingrédients selon le chiffre actuellement du service.
+// 3. marque-page la recette              -> la fonction de faire un signet: affiche la liste de toutes les recettes mises en signet.
+// 4. Crées mes propres recettes          -> L'utilisateur peut téléverser ses propres recettes.
+//                                        -> La recette de l'utilisateur se sera fait marque-page automatiquement.
+//                                        -> L'utilisateur peut seulement voir ses propres recettes, pas de recettes d'autres utilisateurs. 
+// 5. Vois mes marques-pages et propres recettes    -> Sauvégarde le data du marque-page dans la browser en utilisant local storage.
+//    où je quitte cette appli et reviens plus tard -> En chargeant le page, lire les marques-pages mises en Sauvégardés de Local storage et l'écran.
