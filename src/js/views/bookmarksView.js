@@ -1,5 +1,5 @@
 import previewView from './previewView.js';
-import View from './View.js';
+import View from './view.js';
 
 class BookmarksView extends View {
   constructor(parentElement) {
