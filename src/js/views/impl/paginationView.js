@@ -1,7 +1,7 @@
 import { icons } from 'url:../../img/icons.svg'; // Parcel 2
 import View from '../view.js';
 
-export class PaginationView extends View {
+class PaginationView extends View {
   addHandlerClick(handler) {
     this._parentElement.addEventListener('click', e => {
       e.preventDefault();
@@ -60,3 +60,5 @@ export class PaginationView extends View {
                     </button>`;
   }
 }
+
+export default new PaginationView('.pagination');

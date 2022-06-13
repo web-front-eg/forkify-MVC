@@ -1,15 +1,17 @@
-import { RecipeView } from './view.impl/recipeView.js';
-import { SearchView } from './view.impl/searchView.js';
-import { ResultsView } from './view.impl/resultsView.js';
-import { PaginationView } from './view.impl/paginationView.js';
-import { BookmarksView } from './view.impl/bookmarksView.js';
-import { AddRecipeView } from './view.impl/addRecipeView.js';
+import recipeView from './impl/recipeView.js';
+import searchView from './impl/searchView.js';
+import resultsView from './impl/resultsView.js';
+import paginationView from './impl/paginationView.js';
+import bookmarksView from './impl/bookmarksView.js';
+import addRecipeView from './impl/addRecipeView.js';
+import previewView from './impl/previewView.js';
 
 export {
-  RecipeView,
-  SearchView,
-  ResultsView,
-  PaginationView,
-  BookmarksView,
-  AddRecipeView,
+  recipeView,
+  searchView,
+  resultsView,
+  paginationView,
+  bookmarksView,
+  addRecipeView,
+  previewView,
 };

@@ -3,7 +3,7 @@ import 'core-js/stable'; // to polypill the others
 
 import { MODAL_CLOSING_DELAY } from '../others/config.js';
 
-export default class Controller {
+export class Controller {
   constructor(model, views) {
     this.#model = model;
     const {

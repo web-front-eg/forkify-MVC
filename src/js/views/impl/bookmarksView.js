@@ -1,7 +1,7 @@
 import previewView from './previewView.js';
 import View from './view.js';
 
-export class BookmarksView extends View {
+class BookmarksView extends View {
   constructor(parentElement) {
     super(parentElement);
 
@@ -20,3 +20,5 @@ export class BookmarksView extends View {
       .join('');
   }
 }
+
+export default new BookmarksView('.bookmarks__list');

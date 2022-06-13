@@ -4,7 +4,7 @@ import View from './view.js';
 import { Fraction } from 'fractional';
 // import dbg from 'debug';
 
-export class RecipeView extends View {
+class RecipeView extends View {
   addHandlerRender(handler) {
     ['hashchange', 'load'].forEach(evt =>
       window.addEventListener(evt, handler)
@@ -141,3 +141,5 @@ export class RecipeView extends View {
             </li>`;
   }
 }
+
+export default new RecipeView('.recipe');

@@ -1,6 +1,6 @@
 import View from './view.js';
 
-export class SearchView extends View {
+class SearchView extends View {
   addHandlerSearch(handler) {
     this._parentElement.addEventListener('submit', e => {
       e.preventDefault();
@@ -22,3 +22,5 @@ export class SearchView extends View {
     this._searchInputfield.value = '';
   }
 }
+
+export default new SearchView('.search');
