@@ -8,7 +8,7 @@ import {
     API_KEY
 } from '../others/config.js'
 
-class Model {
+export class Model {
     constructor() {
         this._state = {
             recipe: {},
@@ -187,5 +187,3 @@ class Model {
         }
     }
 }; // end-of-class
-
-export default new Model();

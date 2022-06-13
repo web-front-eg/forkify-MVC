@@ -2,9 +2,10 @@ import { mark } from 'regenerator-runtime';
 import icons from 'url:../../img/icons.svg'; // Parcel 2
 
 export default class View {
-  constructor(parentElement) {
-    this._parentElement = parentElement;
-    this._errorMessageRoot = 'Failed to find the recipe. Please try another one!';
+  constructor(parentClassName) {
+    this._parentElement = document.querySelector(parentClassName);
+    this._errorMessageRoot =
+      'Failed to find the recipe. Please try another one!';
     this._messageRoot = '';
     this._data = [];
   }
@@ -51,7 +52,9 @@ export default class View {
 
     const newDOM = document.createRange().createContextualFragment(newMarkup);
     const newElements = Array.from(newDOM.querySelectorAll('*'));
-    const currentElements = Array.from(this._parentElement.querySelectorAll('*'));
+    const currentElements = Array.from(
+      this._parentElement.querySelectorAll('*')
+    );
 
     newElements.forEach((newEl, i) => {
       const curEl = currentElements[i];
@@ -109,9 +112,9 @@ export default class View {
                         </div>`;
     this._clear();
     this._parentElement.insertAdjacentHTML('afterbegin', markup);
-  };
+  }
 
   _clear() {
     this._parentElement.innerHTML = '';
   }
-};
+}
